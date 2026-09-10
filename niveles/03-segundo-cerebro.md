@@ -77,6 +77,15 @@ nada, verificá que la versión instalada sea 4.1.3 o más nueva —
 versiones anteriores tienen una falla de seguridad ya corregida
 (path traversal, GHSA-62gx-5q78-wrvx). Si el release que bajaste
 es más viejo, avisame antes de seguir.
+
+Este plugin trae el servidor HTTP simple (sin certificado) APAGADO
+por defecto — solo enciende el HTTPS con certificado propio, que la
+mayoría de clientes MCP van a rechazar. Para que esto funcione con
+el mínimo de clicks, escribí ya el archivo
+.obsidian/plugins/obsidian-local-rest-api/data.json con el contenido
+{"enableInsecureServer": true} ANTES de que yo abra Obsidian por
+primera vez — así el plugin arranca con el servidor simple ya
+prendido, sin que yo tenga que tocar ningún toggle en sus ajustes.
 ```
 
 **2. Después de tus 2 clicks de siempre (abrir como vault + confirmar que confiás), decile esto a tu agente:**
@@ -85,13 +94,25 @@ es más viejo, avisame antes de seguir.
 Ya abrí el vault con el plugin Local REST API activado. Este plugin
 genera automáticamente una clave de acceso la primera vez que corre
 — buscala en .obsidian/plugins/obsidian-local-rest-api/data.json y
-usala para conectarte a mí mismo por MCP (server local, puerto 27124,
-HTTPS con certificado propio del plugin — puede que tengas que decirle
-a tu configuración de MCP que confíe en ese certificado igual). Una
-vez conectado, probá una consulta simple para confirmar que funciona.
+usala para conectarte a mí mismo por MCP. Usá el puerto HTTP 27123
+(http://127.0.0.1:27123/mcp/), NO el HTTPS 27124 — ese segundo
+puerto usa un certificado que el plugin se firma a sí mismo, y la
+mayoría de los clientes MCP lo rechazan por no ser de una autoridad
+confiable. Antes de intentar conectar, confirmá en ese mismo
+data.json que "enableInsecureServer" quedó en true — si sigue en
+false (podés haberlo pisado si abriste Obsidian antes de que yo
+escribiera el archivo), cambialo ahí o desde Obsidian → Settings →
+Local REST API → activá el toggle del servidor sin cifrar, y recién
+ahí el puerto 27123 va a responder. Una vez conectado, probá una
+consulta simple para confirmar que funciona.
 ```
 
 Tu agente sabe cómo agregar un servidor MCP por HTTP en su propia herramienta (el comando exacto cambia según si es Claude Code, Codex CLI, u otro) — no hace falta que vos sepas el comando, pedíselo y que lo resuelva.
+
+**¿Ya intentaste esto y no conectó?** Hay dos causas posibles, no una sola:
+
+1. **Probaste el puerto 27124 (HTTPS)** — falla por el certificado autofirmado, como se explica arriba. Solución: usar 27123.
+2. **Probaste el 27123 y tampoco respondía nada** — este plugin trae el servidor sin cifrar APAGADO por defecto. Si por algún motivo el toggle no quedó activado (por ejemplo, si Obsidian ya había corrido una vez antes de que tu agente escribiera `data.json`), el puerto directamente no va a escuchar, sin importar a cuál apuntes. Andá a Obsidian → Settings (⚙️) → Community plugins → Local REST API, y activá manualmente la opción de servidor sin cifrar (HTTP) — recién ahí 27123 responde.
 
 **3. La parte que realmente importa: etiquetas consistentes, no un caos de tags distintos**
 

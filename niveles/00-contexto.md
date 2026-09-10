@@ -1,4 +1,4 @@
-# Nivel 00 — Antes que nada: contexto
+# 🧭 Nivel 00 — Antes que nada: contexto
 
 Esto es lo primero que pasa, antes de tocar un solo archivo. No hace falta saber nada de computadoras para este paso — es solo una charla.
 
@@ -22,16 +22,17 @@ Existe el archivo `quien-soy.md` con tus tres respuestas resumidas, y tu agente 
 
 ---
 
-### Decile esto a tu agente (o simplemente pegale este archivo entero y decile "segui esto"):
-
-```
-Antes de armar nada, quiero que me hagas 3 preguntas, una por vez,
-esperando mi respuesta antes de la siguiente:
-1) ¿Quién sos y a qué te dedicás?
-2) ¿Para qué querés usar un agente de IA?
-3) ¿Qué esperás lograr, aunque sea una idea vaga?
-
-Con mis respuestas, creá un archivo quien-soy.md con un resumen
-corto (3-4 líneas), y repetime el resumen para confirmar que
-entendiste bien antes de seguir a lo próximo.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente (o simplemente pegale este archivo entero y decile "segui esto"):**
+>
+> ```
+> Antes de armar nada, quiero que me hagas 3 preguntas, una por vez,
+> esperando mi respuesta antes de la siguiente:
+> 1) ¿Quién sos y a qué te dedicás?
+> 2) ¿Para qué querés usar un agente de IA?
+> 3) ¿Qué esperás lograr, aunque sea una idea vaga?
+>
+> Con mis respuestas, creá un archivo quien-soy.md con un resumen
+> corto (3-4 líneas), y repetime el resumen para confirmar que
+> entendiste bien antes de seguir a lo próximo.
+> ```

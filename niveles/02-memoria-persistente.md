@@ -1,4 +1,4 @@
-# Nivel 02 — Memoria persistente
+# 🧭 Nivel 02 — Memoria persistente
 
 ## El problema
 
@@ -31,13 +31,14 @@ Cerrá la sesión, abrí una nueva, y preguntale "¿qué hicimos la última vez?
 
 ---
 
-### Decile esto a tu agente:
-
-```
-A partir de ahora, quiero que tengas memoria entre sesiones así:
-- Al EMPEZAR cada sesión, leé el archivo memoria.md de esta carpeta.
-- Al TERMINAR cada sesión (o cuando yo diga "cerremos"), agregá al
-  final de memoria.md un resumen corto de qué hicimos y qué quedó
-  pendiente — sin borrar lo que ya había.
-Confirmame que entendiste la regla antes de seguir.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente:**
+>
+> ```
+> A partir de ahora, quiero que tengas memoria entre sesiones así:
+> - Al EMPEZAR cada sesión, leé el archivo memoria.md de esta carpeta.
+> - Al TERMINAR cada sesión (o cuando yo diga "cerremos"), agregá al
+>   final de memoria.md un resumen corto de qué hicimos y qué quedó
+>   pendiente — sin borrar lo que ya había.
+> Confirmame que entendiste la regla antes de seguir.
+> ```

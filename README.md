@@ -1,4 +1,4 @@
-# Primeros pasos con tu agente
+# 🧭 Primeros pasos con tu agente
 
 Esta guía no se lee sola. Se hace **hablando con tu agente**, en el orden que sigue. Cada nivel termina con un bloque de texto que le decís literalmente a tu agente para que haga el paso con vos.
 
@@ -8,10 +8,13 @@ Esta guía no se lee sola. Se hace **hablando con tu agente**, en el orden que s
 
 Abrí esta carpeta con tu agente y decile, literal:
 
-```
-Leé el archivo INSTRUCCIONES-AGENTE.md de esta carpeta y seguí
-exactamente lo que dice, empezando por el Nivel 00.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente:**
+>
+> ```
+> Leé el archivo INSTRUCCIONES-AGENTE.md de esta carpeta y seguí
+> exactamente lo que dice, empezando por el Nivel 00.
+> ```
 
 **¿Usás Claude Code?** Podés escribir `/onboarding` en vez del texto de arriba — es el mismo flujo empaquetado como skill (ver `.claude/skills/onboarding/`), con el chequeo de versión y de qué ya tenés armado hecho automáticamente antes de arrancar o retomar. Con otro agente (Codex CLI, Cursor, etc.), usá el texto de arriba — hace exactamente lo mismo, solo que en conversación en vez de comando.
 
@@ -61,3 +64,18 @@ Es normal, y es útil — esto es un proyecto vivo, no algo terminado. Mirá [CO
 ## Por qué existe
 
 Nace de una sesión real armando exactamente este sistema (memoria + base de conocimiento + patrones de trabajo + persona propia) desde cero, con resultado que funciona en uso real. Esta guía saca la parte específica de esa sesión y deja la forma genérica — para que cualquiera pueda armar la suya, no una copia de la de otro.
+
+## Convención visual (para quien edite esta guía)
+
+Cada bloque de acción ("Decile esto a tu agente") usa siempre el mismo formato — GitHub lo renderiza en color, sin depender de ningún asset externo:
+
+```markdown
+> [!TIP]
+> 🧭 **Decile esto a tu agente:**
+>
+> ```
+> [contenido literal]
+> ```
+```
+
+🧭 (brújula) es la marca recurrente de la guía — va en el título de cada nivel (`# 🧭 Nivel 0X — ...`) y en cada bloque de acción. Si agregás un nivel o un bloque nuevo, seguí el mismo patrón en vez de uno propio.

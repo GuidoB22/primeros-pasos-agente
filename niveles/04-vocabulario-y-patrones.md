@@ -1,4 +1,4 @@
-# Nivel 04 — Vocabulario y patrones de trabajo
+# 🧭 Nivel 04 — Vocabulario y patrones de trabajo
 
 Cuatro palabras que van a ordenar cómo trabajás con tu agente de acá en adelante. No son jerga por la jerga — cada una resuelve un problema real que aparece apenas el trabajo dura más de una sesión.
 
@@ -38,14 +38,15 @@ El agente respeta el freno de mano cuando llega a ese punto (para y pregunta, no
 
 ---
 
-### Decile esto a tu agente:
-
-```
-Vamos a organizar mi trabajo así: mi rama activa es "[nombre de tu
-rama]", con este backlog: [ítem 1], [ítem 2], [ítem 3]. El ítem en
-curso ahora es [ítem 1] — WIP=1, no arranques otro ítem mientras
-este siga activo sin preguntarme primero.
-
-Freno de mano: antes de [la acción irreversible/decisión que solo
-vos tomás], parás y me preguntás explícitamente. No lo hagas solo.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente:**
+>
+> ```
+> Vamos a organizar mi trabajo así: mi rama activa es "[nombre de tu
+> rama]", con este backlog: [ítem 1], [ítem 2], [ítem 3]. El ítem en
+> curso ahora es [ítem 1] — WIP=1, no arranques otro ítem mientras
+> este siga activo sin preguntarme primero.
+>
+> Freno de mano: antes de [la acción irreversible/decisión que solo
+> vos tomás], parás y me preguntás explícitamente. No lo hagas solo.
+> ```

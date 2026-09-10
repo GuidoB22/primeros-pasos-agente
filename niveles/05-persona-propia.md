@@ -1,4 +1,4 @@
-# Nivel 05 — Persona propia (tu propio "CLAUDE.md")
+# 🧭 Nivel 05 — Persona propia (tu propio "CLAUDE.md")
 
 Este es el nivel que más cambia cómo se siente trabajar con tu agente.
 
@@ -76,15 +76,16 @@ El agente frena ante tu prueba, explica por qué, y lo hace en tu propio idioma 
 
 ---
 
-### Decile esto a tu agente:
-
-```
-Guardá este archivo como CLAUDE.md (o el equivalente de tu
-herramienta) y leelo siempre a partir de ahora:
-
-[pegá acá tu propio archivo, adaptado del ejemplo de este nivel]
-
-Ahora quiero probar la regla de frenado: te voy a decir algo a
-propósito mal planteado o confuso, y quiero que me lo señales en
-vez de seguirlo de largo.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente:**
+>
+> ```
+> Guardá este archivo como CLAUDE.md (o el equivalente de tu
+> herramienta) y leelo siempre a partir de ahora:
+>
+> [pegá acá tu propio archivo, adaptado del ejemplo de este nivel]
+>
+> Ahora quiero probar la regla de frenado: te voy a decir algo a
+> propósito mal planteado o confuso, y quiero que me lo señales en
+> vez de seguirlo de largo.
+> ```

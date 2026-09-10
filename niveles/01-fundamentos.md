@@ -32,9 +32,11 @@ Si en algún momento no estás seguro de si estás en la carpeta correcta: busc�
 
 Confirmá que tu agente puede efectivamente leer y escribir en esta carpeta. Es un chequeo de 30 segundos, pero si falla acá, nada de lo que sigue va a funcionar.
 
+De paso, aprovechamos el mismo momento para juntar dos datos más que vamos a necesitar más adelante (no hace falta que entiendas para qué todavía) — así no hay que volver a preguntarlos, ni descubrir a mitad de camino que algo falta: en qué sistema operativo estás, y si tu agente puede ejecutar un comando de terminal además de tocar archivos (son dos capacidades distintas — algunos agentes solo hacen una de las dos).
+
 ## Checkpoint
 
-El agente crea el archivo, te dice la ruta completa de la carpeta (para que la anotes), y cuando le pedís que te diga qué dice el archivo, te repite el contenido correcto (no inventado).
+El agente crea el archivo, te dice la ruta completa de la carpeta (para que la anotes), te confirma tu sistema operativo, corre un comando de solo lectura sin problemas (o te avisa con claridad si no puede), y cuando le pedís que te diga qué dice el archivo, te repite el contenido correcto (no inventado).
 
 ---
 
@@ -44,6 +46,14 @@ El agente crea el archivo, te dice la ruta completa de la carpeta (para que la a
 > ```
 > Creá un archivo llamado hola.md en esta carpeta, con el texto
 > "Primer contacto: [fecha de hoy]". Después leelo y decime qué
-> dice. Y decime también la ruta completa de esta carpeta, para
+> dice. Decime también la ruta completa de esta carpeta, para
 > poder anotarla.
+>
+> Además, confirmame dos cosas más: en qué sistema operativo estoy
+> (Windows, Mac o Linux), y si podés ejecutar un comando de
+> terminal de solo lectura (por ejemplo, revisar si tengo git
+> instalado y qué versión, sin instalar ni cambiar nada). Si no
+> podés ejecutar comandos, decímelo así de simple, no es un
+> problema todavía. Agregá las dos respuestas a hola.md, abajo del
+> texto que ya pusiste.
 > ```

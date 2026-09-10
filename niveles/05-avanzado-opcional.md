@@ -67,3 +67,38 @@ flowchart TB
 ```
 
 No hace falta nada de esto hasta que tengas más de una tarea automática tocando los mismos archivos — antes de eso, es complejidad de más.
+
+## Evitar releer algo que no cambió
+
+Parecido al candado de arriba, pero para otro problema: si tu agente tiene que consultar un recurso externo (otro repo, una base de conocimiento compartida, un documento largo) para ver si hay algo nuevo, la forma ingenua es releerlo entero cada vez — lento, y gasta proceso de más cuando la mayoría de las veces no cambió nada.
+
+La solución simple: guardar un "marcador de la última vez que lo viste" y comparar antes de leer.
+
+```mermaid
+flowchart LR
+    A["¿Guardaste un marcador la última vez?"] -->|sí| B["Comparalo contra el estado actual del recurso"]
+    B -->|"igual"| C["No hay nada nuevo — cortá acá, no releas nada"]
+    B -->|"distinto"| D["Traé SOLO lo que cambió, no todo de nuevo"]
+    D --> E["Actualizá el marcador"]
+    A -->|"no, primera vez"| F["Leé todo una vez y guardá el marcador"]
+```
+
+Si el recurso es un repo de git, el marcador más simple es el **SHA del último commit que viste** — es un identificador único y siempre creciente, perfecto para esto. El patrón completo:
+
+1. Guardar el SHA visto en un archivo local (no versionado, es solo tu propio marcador).
+2. Antes de consultar: preguntar el SHA actual del recurso y compararlo contra el guardado.
+3. Si es igual: no hay nada nuevo, cortar ahí — no leer nada más.
+4. Si es distinto: traer solo el diff entre el SHA viejo y el nuevo (no todo el contenido de nuevo).
+5. Actualizar el marcador al SHA nuevo, haya habido novedades o no.
+6. Ofrecerte lo que encontró — nunca incorporarlo solo, sin que decidas vos.
+
+### Decile esto a tu agente (si tenés un recurso externo que consultás seguido):
+
+```
+Quiero que antes de releer [el recurso que sea] completo, guardes
+un marcador de la última versión que viste (si es un repo git, usá
+el SHA del último commit). La próxima vez, comparalo contra el
+estado actual: si no cambió nada, no releas nada y decímelo en una
+línea. Si cambió, traeme solo lo nuevo, no todo de nuevo — y
+actualizá el marcador después.
+```

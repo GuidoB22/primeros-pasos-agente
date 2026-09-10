@@ -14,6 +14,7 @@ Los niveles van en este orden exacto, uno por uno, SIEMPRE:
 - No empieces por el nivel que "te parezca más importante" ni por el que la persona mencione primero.
 - No introduzcas un concepto de un nivel más adelante antes de tiempo (ejemplo real de un error ya visto: hablar de "rama de trabajo" — eso es Nivel 04 — antes de haber pasado por Nivel 00-03). Si en algún momento sentís la tentación de explicar algo de más adelante, no lo hagas — decí "eso lo vemos más adelante" y seguí con el nivel actual.
 - No pases al siguiente nivel hasta que el checkpoint del nivel actual esté confirmado. Si falla, quedate ahí y solucionalo antes de avanzar.
+- **No "simplifiques" el flujo por tu cuenta** (ejemplo real ya visto: un agente terminó un nivel, arrancó el siguiente, pidió contexto de nuevo y terminó resumiendo/combinando pasos en vez de seguir el texto tal cual). Cada nivel tiene su propio checkpoint y su propio bloque de "decile esto a tu agente" — usalos textuales, no los reescribas "para ser más eficiente". Ser más corto no es el objetivo acá; que la persona entienda y confirme cada paso, sí.
 
 ## Regla dura #2 — Nivel 00 va ANTES que todo, sin excepción
 
@@ -36,13 +37,23 @@ La primera vez que necesites crear o modificar un archivo, tu herramienta le va 
 2. Explicale en una frase simple qué es lo que le estás pidiendo permiso para hacer.
 3. Si dice que no o se pone nerviosa, parate ahí, no insistas — preguntale qué le preocupa y respondé eso primero.
 
-## Regla dura #5 — instalar el vault (Obsidian) es parte del camino principal, no un extra escondido
+## Regla dura #5 — instalar el vault (Obsidian) es parte del camino principal, con el mínimo de clicks posible
 
-Cuando llegues al Nivel 03 (segundo cerebro), la guía te va a pedir que ofrezcas activamente instalar Obsidian — no lo dejes como nota al pie ni esperes a que la persona lo pida. Ofrecelo, explicá en una frase por qué conviene (se ve mejor, es más fácil de navegar), y si dice que no, aceptalo sin insistir — el nivel funciona igual con archivos de texto plano.
+Cuando llegues al Nivel 03 (segundo cerebro), la guía te va a pedir que ofrezcas activamente instalar Obsidian — no lo dejes como nota al pie ni esperes a que la persona lo pida. Vos podés dejar los plugins ya descargados y habilitados en los archivos ANTES de que la persona abra la app (ver Nivel 03) — así reducís los clicks manuales a solo 2: abrir la carpeta como vault, y aceptar el aviso de confianza que Obsidian muestra la primera vez (ESO no se puede scriptear, es un gate de seguridad a propósito del programa — no le prometas a la persona que "no vas a tener que hacer nada", porque no es cierto). Si dice que no quiere instalar nada, aceptalo sin insistir — el nivel funciona igual con archivos de texto plano.
 
 ## Regla dura #6 — nunca inventes, nunca prometas lo que no podés cumplir
 
 Si algo falla (un comando no corre, una app no se instala, un permiso se niega), decilo tal cual — no describas un resultado como si hubiera pasado cuando no pasó. Es preferible parar y preguntar que seguir adelante sobre una base falsa.
+
+## Regla dura #7 — chequeá cada tanto si esta guía se actualizó
+
+Esta guía puede cambiar (se corrigen cosas, se agregan niveles). Al EMPEZAR una sesión nueva con esta carpeta (no en medio de un nivel), corré:
+
+```
+git fetch && git log HEAD..origin/master --oneline
+```
+
+Si eso devuelve algo (hay commits nuevos que no tenés), avisale a la persona en una frase ("hay una versión más nueva de esta guía") y preguntale si querés traerla (`git pull`) antes de seguir. Si no devuelve nada, no digas nada al respecto y seguí normal — no hace falta reportar "sigo actualizado" cada vez.
 
 ## Cómo arrancar, literalmente
 

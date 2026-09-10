@@ -25,41 +25,40 @@ Mirá `plantillas/segundo-cerebro/_ejemplo-nota.md` para ver la forma mínima.
 
 ## Instalando Obsidian — recomendado, te lo va a hacer mucho más cómodo de ver
 
-Los archivos de texto de arriba andan igual sin esto — pero una app te deja VER las notas con formato lindo y las conexiones entre ellas dibujadas, en vez de abrir cada `.md` a mano. Tu agente puede instalar la app, pero hay 3 clicks que tenés que dar vos — te digo exactamente cuáles.
+Los archivos de texto de arriba andan igual sin esto — pero una app te deja VER las notas con formato lindo y las conexiones entre ellas dibujadas, en vez de abrir cada `.md` a mano.
 
-**1. Instalación — esto lo hace tu agente:**
+Tu agente puede dejar TODO listo de antemano (instalar la app, y descargar+activar los 2 plugins que usamos) — así te quedan solo **2 clicks tuyos**, no más: abrir la carpeta, y aceptar un aviso de seguridad que Obsidian muestra siempre la primera vez (ese aviso no se puede saltear con ningún script — es a propósito, para que un vault ajeno no pueda correr código sin que vos lo confirmes).
 
-```
-Instalá Obsidian en esta computadora. Si es Windows, usá
-"winget install --id=Obsidian.Obsidian -e" en una terminal.
-Si es Mac, usá "brew install --cask obsidian" (si no tengo
-Homebrew, decime antes de instalar nada). Si es Linux, decime
-qué distro uso y buscá el método correcto. Confirmame cuando
-haya terminado.
-```
-
-**2. Abrir esta carpeta como "vault" — esto lo hacés vos, con el mouse, una sola vez:**
-
-Abrí Obsidian (te va a aparecer un ícono nuevo en tu computadora). Va a aparecer una ventana con un botón que dice **"Open folder as vault"** — apretalo, y elegí esta misma carpeta. Listo, ya está conectada.
-
-**3. Prender los plugins de comunidad — también con el mouse, una sola vez:**
-
-Adentro de Obsidian: abajo a la izquierda hay un ícono de tuerca (⚙️, "Settings"). Hacé click ahí, después en "Community plugins" en la lista de la izquierda, y después en el botón que dice **"Turn on community plugins"**.
-
-**4. Instalar 2 plugins concretos:**
-
-Con eso ya prendido: en la misma pantalla de "Community plugins" apretá **"Browse"**, buscá por nombre, y para cada uno: **"Install"** y después **"Enable"**.
-
-- **Dataview** — te deja hacer preguntas simples sobre tus notas.
-- **Git** (`obsidian-git`) — te guarda un historial real de tus notas, para poder volver atrás si algo se rompe.
-
-### Decile esto a tu agente (después de los 4 pasos de arriba):
+**1. Instalación + plugins ya listos — esto lo hace tu agente entero, vos no tocás nada todavía:**
 
 ```
-Ya instalé Obsidian, abrí esta carpeta como vault, prendí
-community plugins, e instalé Dataview y Git. Confirmá que ves
-la carpeta .obsidian/ acá adentro, y contame en una línea para
-qué sirve cada uno de esos dos plugins con tus propias palabras.
+Instalá Obsidian en esta computadora (winget en Windows, brew
+--cask en Mac, o el método que corresponda a mi Linux si es
+otro — preguntame antes si no tenés Homebrew). Después, en esta
+misma carpeta, dejá pre-instalados y habilitados los plugins
+Dataview (blacksmithgu/obsidian-dataview) y Git (Vinzent03/obsidian-git):
+descargá los archivos de su último release de GitHub a
+.obsidian/plugins/dataview/ y .obsidian/plugins/obsidian-git/,
+y agregá sus IDs a .obsidian/community-plugins.json. Avisame
+cuando todo esto esté listo.
+```
+
+**2. Los 2 clicks que te quedan a vos — con guía oficial de Obsidian:**
+
+Solo esto es manual (nadie puede scriptearlo por vos, ni siquiera Obsidian mismo lo permite):
+
+- **Abrir esta carpeta como vault** — guía oficial: [obsidian.md/help/vault](https://obsidian.md/help/vault) (sección "Open existing folder"). Es 3 pasos: click en "Open" al lado de "Open folder as vault", elegís esta carpeta, click en "Open".
+- **Confirmar que confiás en los plugins** — la primera vez que abras esta carpeta, Obsidian te va a preguntar si confiás en el autor del vault (porque ya trae plugins con código dentro) — guía oficial: [obsidian.md/help/community-plugins](https://obsidian.md/help/community-plugins). Como sos vos quien lo armó (con tu agente), confiá y aceptá.
+
+Esos links son la documentación OFICIAL de Obsidian — son de texto, sin capturas de pantalla (así es como Obsidian la mantiene). Si en algún paso no entendés qué estás viendo en tu pantalla, describíselo a tu agente y que te ayude a identificarlo — no hace falta que la imagen esté en un documento para que tu agente te pueda orientar.
+
+### Decile esto a tu agente (después de tus 2 clicks):
+
+```
+Ya abrí la carpeta como vault y confirmé que confío en los
+plugins. Confirmá que ves la carpeta .obsidian/plugins/ con
+dataview y obsidian-git adentro, y contame en una línea para
+qué sirve cada uno con tus propias palabras.
 ```
 
 **¿Preferís no instalar nada por ahora?** Está perfecto — seguí con los archivos de texto plano de arriba, funcionan igual. Podés volver a esto cuando quieras.

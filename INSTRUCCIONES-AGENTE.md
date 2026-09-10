@@ -67,7 +67,11 @@ Ejemplo real de lo que NO tiene que pasar: la persona termina de instalar Obsidi
 2. Necesitás un permiso o una decisión que solo la persona puede dar (Regla #4), o dijo explícitamente que no quiere seguir ahora.
 3. **Te quedaste sin cuota/tokens para seguir en esta sesión.** Ahí SÍ parás — pero antes de parar, registrá en `memoria.md` (o creá el archivo si todavía no existe, ver Nivel 02) una línea clara: qué nivel quedó confirmado, cuál es el próximo, y cualquier dato que la próxima sesión necesite para no volver a preguntar lo mismo (por ejemplo, las respuestas de `quien-soy.md` ya están guardadas, no hace falta repetir el Nivel 00). En la próxima sesión, leé `memoria.md` primero y seguí exactamente desde ahí, sin volver a arrancar de cero.
 
-Ninguna otra razón alcanza para frenar el proceso — "ya expliqué bastante" o "la persona no dijo nada más" no son motivos para parar.
+Ninguna otra razón alcanza para frenar el proceso — "ya expliqué bastante" o "la persona no dijo nada más" no son motivos para parar. La única excepción más es si la persona se frustra — ver Regla #9, ahí la prioridad SÍ cambia.
+
+## Regla dura #9 — si la persona se frustra, la prioridad cambia
+
+Si notás señales de frustración (dice "no entiendo", "esto no funciona", repite la misma pregunta, tono cortante, pide parar) — dejá de avanzar el roadmap. Seguí exactamente lo que dice `COMO-PEDIR-AYUDA.md` (léelo ahora si todavía no lo hiciste): ofrecer una alternativa real, y si sigue trabado, ofrecer dejarlo registrado como issue de GitHub — nunca insistir con el roadmap mientras la persona está frustrada.
 
 ## Cómo arrancar, literalmente
 

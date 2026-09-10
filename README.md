@@ -50,6 +50,10 @@ Todo lo demás (memoria, base de conocimiento, vocabulario, tu propia forma de t
 | [05 — Persona propia](niveles/05-persona-propia.md) | Que tu agente te hable como vos querés, y te frene cuando hace falta |
 | [06 — Avanzado (opcional)](niveles/06-avanzado-opcional.md) | Para cuando ya tengas todo lo anterior andando |
 
+## ¿Te trabaste o te dio bronca en algún momento?
+
+Es normal, y es útil — esto es un proyecto vivo, no algo terminado. Mirá [COMO-PEDIR-AYUDA.md](COMO-PEDIR-AYUDA.md): tu agente puede dejar el problema anotado (un issue en GitHub) para que la guía mejore de verdad, en vez de que te quedes trabado en silencio.
+
 ## Por qué existe
 
 Nace de una sesión real armando exactamente este sistema (memoria + base de conocimiento + patrones de trabajo + persona propia) desde cero, con resultado que funciona en uso real. Esta guía saca la parte específica de esa sesión y deja la forma genérica — para que cualquiera pueda armar la suya, no una copia de la de otro.

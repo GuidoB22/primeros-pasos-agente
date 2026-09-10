@@ -23,3 +23,13 @@ Se arma con lo que va apareciendo en Discord y en los issues de GitHub — cada 
 **Causa más común, casi siempre esta**: el agente se abrió en una carpeta DISTINTA a la de la guía — no es que se haya "olvidado", es que está mirando un lugar equivocado de tu computadora.
 
 **Solución**: ver Nivel 01, sección "No perder tu carpeta" — hay que abrir el agente exactamente en la misma carpeta siempre. Si no estás seguro de cuál es, buscá en tu computadora un archivo llamado `quien-soy.md` (usá el buscador de archivos de tu sistema) — la carpeta donde esté ese archivo es la correcta.
+
+---
+
+## "Instalé el plugin de Local REST API pero el MCP no conecta — el puerto HTTPS no responde"
+
+**Síntoma**: el plugin queda instalado y activado, pero al conectar el MCP con el puerto HTTPS (27124) la conexión falla — parece que "el puerto no escucha", aunque Obsidian esté abierto y todo lo demás bien instalado.
+
+**Causa**: ese puerto usa un certificado que el propio plugin se firma a sí mismo (no lo emite una autoridad reconocida) — la mayoría de los clientes MCP lo rechazan por eso, no porque el servidor esté caído.
+
+**Solución**: usar el puerto HTTP 27123 (`http://127.0.0.1:27123/mcp/`) en vez del HTTPS 27124 — mismo plugin, mismo dato, sin el problema del certificado. Ver Nivel 03, sección de conexión MCP.

@@ -85,13 +85,18 @@ es más viejo, avisame antes de seguir.
 Ya abrí el vault con el plugin Local REST API activado. Este plugin
 genera automáticamente una clave de acceso la primera vez que corre
 — buscala en .obsidian/plugins/obsidian-local-rest-api/data.json y
-usala para conectarte a mí mismo por MCP (server local, puerto 27124,
-HTTPS con certificado propio del plugin — puede que tengas que decirle
-a tu configuración de MCP que confíe en ese certificado igual). Una
-vez conectado, probá una consulta simple para confirmar que funciona.
+usala para conectarte a mí mismo por MCP. Usá el puerto HTTP 27123
+(http://127.0.0.1:27123/mcp/), NO el HTTPS 27124 — ese segundo
+puerto usa un certificado que el plugin se firma a sí mismo, y la
+mayoría de los clientes MCP lo rechazan por no ser de una autoridad
+confiable, así que la conexión falla aunque el plugin esté bien
+instalado. El puerto 27123 evita ese problema por completo. Una vez
+conectado, probá una consulta simple para confirmar que funciona.
 ```
 
 Tu agente sabe cómo agregar un servidor MCP por HTTP en su propia herramienta (el comando exacto cambia según si es Claude Code, Codex CLI, u otro) — no hace falta que vos sepas el comando, pedíselo y que lo resuelva.
+
+**¿Ya intentaste con el puerto 27124 y no te conectó?** Es exactamente el problema de arriba — no es que algo esté roto, es el certificado autofirmado del puerto HTTPS. Pedile a tu agente que reintente la conexión apuntando a `http://127.0.0.1:27123/mcp/` en vez de al 27124, y va a andar sin tocar nada más.
 
 **3. La parte que realmente importa: etiquetas consistentes, no un caos de tags distintos**
 

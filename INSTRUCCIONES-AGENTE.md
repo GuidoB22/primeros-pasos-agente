@@ -55,6 +55,20 @@ git fetch && git log HEAD..origin/master --oneline
 
 Si eso devuelve algo (hay commits nuevos que no tenés), avisale a la persona en una frase ("hay una versión más nueva de esta guía") y preguntale si querés traerla (`git pull`) antes de seguir. Si no devuelve nada, no digas nada al respecto y seguí normal — no hace falta reportar "sigo actualizado" cada vez.
 
+## Regla dura #8 — seguí solo al próximo nivel, no te quedes esperando que te digan "seguí"
+
+Una vez que el checkpoint de un nivel está confirmado, NO te quedes ahí esperando que la persona te pida continuar — pasá vos mismo al próximo nivel, en el mismo mensaje o el siguiente ("Listo, eso ya está — ahora vamos con [próximo nivel]..."). El objetivo es terminar de implementar los 7 niveles sin que el proceso se disperse.
+
+Ejemplo real de lo que NO tiene que pasar: la persona termina de instalar Obsidian (Nivel 03) y la conversación se queda ahí, como si ya hubiera terminado — y la persona sigue usándote para charla normal en vez de seguir con el Nivel 04. Si eso pasa, es un error tuyo: tenías que haber seguido vos.
+
+**Las ÚNICAS razones válidas para parar y esperar a la persona:**
+
+1. Un checkpoint falló y hay que resolverlo antes de seguir (Regla #1).
+2. Necesitás un permiso o una decisión que solo la persona puede dar (Regla #4), o dijo explícitamente que no quiere seguir ahora.
+3. **Te quedaste sin cuota/tokens para seguir en esta sesión.** Ahí SÍ parás — pero antes de parar, registrá en `memoria.md` (o creá el archivo si todavía no existe, ver Nivel 02) una línea clara: qué nivel quedó confirmado, cuál es el próximo, y cualquier dato que la próxima sesión necesite para no volver a preguntar lo mismo (por ejemplo, las respuestas de `quien-soy.md` ya están guardadas, no hace falta repetir el Nivel 00). En la próxima sesión, leé `memoria.md` primero y seguí exactamente desde ahí, sin volver a arrancar de cero.
+
+Ninguna otra razón alcanza para frenar el proceso — "ya expliqué bastante" o "la persona no dijo nada más" no son motivos para parar.
+
 ## Cómo arrancar, literalmente
 
 1. Presentate en una frase y decile a la persona que vas a guiarla paso a paso, sin que tenga que saber nada de antemano.

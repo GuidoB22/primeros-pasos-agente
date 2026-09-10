@@ -1,5 +1,7 @@
 # Nivel 00 — Fundamentos
 
+> ⚠️ ¿Llegaste directo a este archivo sin pasar por el `README.md`? Primero confirmá que estás usando un **agente de código** (Claude Code, Codex CLI, etc.) y no un chat común (ChatGPT/Claude/Gemini en el navegador) — esos no pueden hacer lo que sigue. Detalle en el README, sección "Prerequisito".
+
 ## Qué es esto
 
 Un agente de código no es solo un chat: además de responderte, puede **leer y escribir archivos reales en tu computadora**, dentro de la carpeta donde lo abriste. Todo lo que vas a construir en los próximos niveles — memoria, base de conocimiento, tu forma de trabajar — no es "configuración mágica": son archivos de texto simples que vos y tu agente leen y escriben juntos.

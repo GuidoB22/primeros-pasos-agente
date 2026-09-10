@@ -10,6 +10,47 @@ El `memoria.md` del Nivel 01 funciona, pero no escala bien: se hace largo, no se
 
 Herramientas como Obsidian toman la misma convención del Nivel 02 (carpeta + markdown + links) y le agregan un visor gráfico (grafo de conexiones, búsqueda, plugins). No cambia el modelo — tus notas siguen siendo archivos de texto simples — solo se ven mejor y son más fáciles de navegar.
 
+### Instalando Obsidian, en serio (no solo la idea)
+
+Ojo con esto: parte lo puede hacer tu agente por vos, parte es un click que tenés que dar vos a mano — no hay forma de evitarlo, Obsidian no tiene un instalador 100% headless. Te digo exactamente dónde termina lo uno y empieza lo otro.
+
+**1. Instalación de la app — esto SÍ lo hace tu agente:**
+
+```
+Instalá Obsidian en esta computadora. Si es Windows, usá
+"winget install --id=Obsidian.Obsidian -e" en una terminal.
+Si es Mac, usá "brew install --cask obsidian" (si no tengo
+Homebrew, decime antes de instalar nada). Si es Linux, decime
+qué distro uso y buscá el método correcto. Confirmame cuando
+haya terminado.
+```
+
+**2. Abrir la carpeta como vault — esto lo hacés vos, una vez, a mano:**
+
+Abrí Obsidian → "Open folder as vault" → elegí esta misma carpeta (la de `primeros-pasos-agente`, o donde tengas tu segundo cerebro del Nivel 02). Son 2 clicks, no hay atajo por CLI para esto.
+
+**3. Habilitar plugins de comunidad — también a mano, una sola vez:**
+
+Settings (ícono de tuerca, abajo a la izquierda) → Community plugins → "Turn on community plugins". Este toggle existe a propósito para que no sea automático — Obsidian no te deja habilitarlo por script.
+
+**4. Instalar plugins concretos — a mano, por cada uno:**
+
+Con community plugins ya prendido: Settings → Community plugins → Browse → buscar por nombre → Install → Enable. Para arrancar, con estos dos alcanza (no hace falta instalar los 10+ que capaz ves mencionados en otras guías más avanzadas):
+
+- **Dataview** — te deja hacer consultas simples sobre tus notas (ej. "todas las notas con tag X"), útil apenas tengas más de 10-15 notas.
+- **Git** (`obsidian-git`) — si en el Nivel 05 anterior te armaste el patrón de lock para tareas automáticas, este plugin es el que te da historial real y la posibilidad de volver atrás si algo se rompe (mismo motivo por el que Guido lo terminó agregando a su propio vault, después de perder contenido una vez).
+
+Cualquier otro plugin: instalalo cuando tengas una razón concreta, no por acumular — es la misma regla de "no armar complejidad antes de necesitarla" del resto de esta guía.
+
+### Decile esto a tu agente (después de los 4 pasos de arriba)
+
+```
+Ya instalé Obsidian, abrí esta carpeta como vault, prendí
+community plugins, e instalé Dataview y Git. Confirmá que ves
+la carpeta .obsidian/ acá adentro, y contame en una línea para
+qué sirve cada uno de esos dos plugins con tus propias palabras.
+```
+
 ## Si automatizás tareas: el problema de dos procesos tocando lo mismo a la vez
 
 Cuando empezás a tener tareas automáticas/programadas (no solo conversaciones en vivo) que tocan los mismos archivos, puede pasar que dos corran casi al mismo tiempo y se pisen entre sí — una sobreescribe lo que la otra estaba por guardar.

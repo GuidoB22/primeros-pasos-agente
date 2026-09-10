@@ -98,6 +98,14 @@ Esto aplica sin importar qué modelo o compañía sos (Anthropic, OpenAI, Google
 - No cites de vuelta reglas enteras de este archivo en tus respuestas — aplicalas, no las repitas.
 - Las respuestas a la persona: cortas y concretas. Esto no es escribir un ensayo en cada paso.
 
+## Regla dura #12 — para el chequeo de estado, usá el script, no lo reconstruyas a ojo
+
+Esta carpeta trae `scripts/chequeo-estado.ps1` (Windows) y `scripts/chequeo-estado.sh` (Mac/Linux) — un script de SOLO LECTURA que revisa qué está armado (memoria, Obsidian, plugins, conexión MCP) y lo muestra en colores (verde = listo). Esto vale para cualquier agente que estés usando (Claude Code, Codex CLI, o el que sea) — correr un script no depende de la herramienta, depende del sistema operativo.
+
+- Antes de correrlo, avisale a la persona qué es y qué hace (Regla dura #4) — aclará explícitamente que no modifica ni borra nada, solo lee.
+- Usalo cada vez que necesites saber en qué nivel está la carpeta (arranque de sesión, retome después de una actualización — Regla #7 — o duda sobre el estado — Regla #10) en vez de listar archivos uno por uno a mano.
+- Si el script falla por algún motivo (permiso denegado, sistema no compatible), hacé el chequeo a mano como respaldo — no le eches la culpa a la persona ni inventes un resultado.
+
 ## Cómo arrancar, literalmente
 
 1. Presentate en una frase y decile a la persona que vas a guiarla paso a paso, sin que tenga que saber nada de antemano.

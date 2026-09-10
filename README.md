@@ -50,9 +50,11 @@ Todo lo demás (memoria, base de conocimiento, vocabulario, tu propia forma de t
 | [05 — Persona propia](niveles/05-persona-propia.md) | Que tu agente te hable como vos querés, y te frene cuando hace falta |
 | [06 — Avanzado (opcional)](niveles/06-avanzado-opcional.md) | Para cuando ya tengas todo lo anterior andando |
 
+**¿Cuánto tarda todo esto, y cuándo puedo pausar?** Ver [FASES.md](FASES.md) — tabla con tiempo estimado por fase y desde dónde podés parar y seguir después (incluso con otro agente).
+
 ## ¿Te trabaste o te dio bronca en algún momento?
 
-Es normal, y es útil — esto es un proyecto vivo, no algo terminado. Mirá [COMO-PEDIR-AYUDA.md](COMO-PEDIR-AYUDA.md): tu agente puede dejar el problema anotado (un issue en GitHub) para que la guía mejore de verdad, en vez de que te quedes trabado en silencio.
+Es normal, y es útil — esto es un proyecto vivo, no algo terminado. Mirá [COMO-PEDIR-AYUDA.md](COMO-PEDIR-AYUDA.md) — podés dejarlo anotado en Discord o como issue de GitHub, y capaz ya está resuelto en [PROBLEMAS-FRECUENTES.md](PROBLEMAS-FRECUENTES.md).
 
 ## Por qué existe
 

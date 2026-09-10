@@ -2,6 +2,19 @@
 
 Esta guía no se lee sola. Se hace **hablando con tu agente**, en el orden que sigue. Cada nivel termina con un bloque de texto que le decís literalmente a tu agente para que haga el paso con vos.
 
+**Pensada para cualquiera, sin importar cuánto sepas de computadoras.** Si nunca usaste algo así, tranquilo/a — está armada para que tu agente te vaya llevando de la mano, un paso genuinamente chico a la vez.
+
+## 👉 Primer paso, siempre: decile esto a tu agente
+
+Abrí esta carpeta con tu agente y decile, literal:
+
+```
+Leé el archivo INSTRUCCIONES-AGENTE.md de esta carpeta y seguí
+exactamente lo que dice, empezando por el Nivel 00.
+```
+
+Eso alcanza — el resto lo va guiando el agente solo, un paso por vez. Todo lo que sigue en este README es referencia, no hace falta leerlo entero antes de arrancar.
+
 ## ⚠️ Prerequisito — leé esto ANTES de empezar
 
 Esto **no funciona con un chat común** (ChatGPT en chatgpt.com, Claude en claude.ai, Gemini, etc.). Esos chats pueden hablar con vos, pero no pueden tocar archivos en tu computadora — y esta guía es, literalmente, crear y editar archivos junto a tu agente. Si intentás hacer esto en un chat común, el agente no va a poder ejecutar nada real: como mucho te va a *describir* qué archivo crearía, y ahí es donde la cosa empieza a andar en círculos (inventa una alternativa a mano, te promete algo que no puede cumplir, etc.).
@@ -14,27 +27,28 @@ Necesitás un **agente de código** — un programa que corre en tu computadora,
 
 La mayoría de estas herramientas tiene alguna forma de prueba gratuita o plan gratuito — están cambiando seguido, así que anda directo a la página oficial de la que elijas y fijate la oferta actual en vez de confiar en un número que alguien te pasó de memoria.
 
-**¿No estás seguro si lo que tenés abierto es esto?** El checkpoint del Nivel 00 es justo ese chequeo — 30 segundos, y si falla ahí, es que no tenés la herramienta correcta, no que algo esté mal con la guía.
+**¿No estás seguro si lo que tenés abierto es esto?** El checkpoint del Nivel 01 es justo ese chequeo — 30 segundos, y si falla ahí, es que no tenés la herramienta correcta, no que algo esté mal con la guía.
 
 Todo lo demás (memoria, base de conocimiento, vocabulario, tu propia forma de trabajar) lo vamos construyendo con archivos de texto simples, un nivel a la vez — con el agente correcto, ya elegido.
 
 ## Cómo usar esto
 
 1. Abrí esta carpeta con tu agente.
-2. Empezá por `niveles/00-fundamentos.md`.
-3. Leé el nivel, hacé la acción con tu agente, confirmá el checkpoint.
-4. Recién ahí pasá al siguiente. No te saltees niveles — cada uno da por hecho lo anterior.
+2. Decile la frase de arriba ("Leé INSTRUCCIONES-AGENTE.md...").
+3. Respondé las preguntas que te haga, hacé la acción de cada nivel, confirmá el checkpoint.
+4. El agente te va llevando de nivel en nivel — vos no tenés que acordarte del orden ni abrir los archivos a mano si no querés.
 
 ## Índice
 
 | Nivel | Qué resuelve |
 |---|---|
-| [00 — Fundamentos](niveles/00-fundamentos.md) | Qué es esto de "trabajar con un agente" |
-| [01 — Memoria persistente](niveles/01-memoria-persistente.md) | Que tu agente no se olvide todo entre sesiones |
-| [02 — Segundo cerebro](niveles/02-segundo-cerebro.md) | Una base de conocimiento que crece con el tiempo |
-| [03 — Vocabulario y patrones](niveles/03-vocabulario-y-patrones.md) | Cómo organizar el trabajo sin perderte |
-| [04 — Persona propia](niveles/04-persona-propia.md) | Que tu agente te hable como vos querés, y te frene cuando hace falta |
-| [05 — Avanzado (opcional)](niveles/05-avanzado-opcional.md) | Para cuando ya tengas todo lo anterior andando |
+| [00 — Contexto](niveles/00-contexto.md) | Quién sos, para qué querés esto — va antes que cualquier otra cosa |
+| [01 — Fundamentos](niveles/01-fundamentos.md) | Qué es esto de "trabajar con un agente" |
+| [02 — Memoria persistente](niveles/02-memoria-persistente.md) | Que tu agente no se olvide todo entre sesiones |
+| [03 — Segundo cerebro](niveles/03-segundo-cerebro.md) | Una base de conocimiento que crece con el tiempo (acá también se instala Obsidian, si querés) |
+| [04 — Vocabulario y patrones](niveles/04-vocabulario-y-patrones.md) | Cómo organizar el trabajo sin perderte |
+| [05 — Persona propia](niveles/05-persona-propia.md) | Que tu agente te hable como vos querés, y te frene cuando hace falta |
+| [06 — Avanzado (opcional)](niveles/06-avanzado-opcional.md) | Para cuando ya tengas todo lo anterior andando |
 
 ## Por qué existe
 

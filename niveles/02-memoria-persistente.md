@@ -1,4 +1,4 @@
-# Nivel 01 — Memoria persistente
+# Nivel 02 — Memoria persistente
 
 ## El problema
 
@@ -19,7 +19,7 @@ flowchart TB
     A2 -.archivo persiste.-> B1
 ```
 
-Más adelante (Nivel 05) vas a poder reemplazar este archivo simple por un sistema de memoria más completo (búsqueda, categorías, memoria compartida entre proyectos) — pero esa mejora no cambia el concepto de fondo, solo lo hace más cómodo a gran escala. Empezá con el archivo simple.
+Más adelante (Nivel 06) vas a poder reemplazar este archivo simple por un sistema de memoria más completo (búsqueda, categorías, memoria compartida entre proyectos) — pero esa mejora no cambia el concepto de fondo, solo lo hace más cómodo a gran escala. Empezá con el archivo simple.
 
 ## Acción
 

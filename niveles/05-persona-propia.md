@@ -1,4 +1,4 @@
-# Nivel 04 — Persona propia (tu propio "CLAUDE.md")
+# Nivel 05 — Persona propia (tu propio "CLAUDE.md")
 
 Este es el nivel que más cambia cómo se siente trabajar con tu agente.
 

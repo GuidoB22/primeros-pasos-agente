@@ -63,6 +63,58 @@ qué sirve cada uno con tus propias palabras.
 
 **¿Preferís no instalar nada por ahora?** Está perfecto — seguí con los archivos de texto plano de arriba, funcionan igual. Podés volver a esto cuando quieras.
 
+## Conectar tu agente al vault por MCP — para que consulte y escriba por etiqueta, no a ciegas
+
+Esto solo aplica si instalaste Obsidian arriba. Hasta acá, tu agente escribe notas en el vault porque se lo pedís en el chat — pero no puede "preguntarle al vault" cosas como *"traeme todas las notas etiquetadas como pendiente"* ni insertar una nota nueva respetando esas etiquetas, salvo que tenga una conexión dedicada para eso. Esa conexión se llama **MCP** (Model Context Protocol) — un puente estándar entre tu agente y una herramienta externa, en este caso tu propio vault.
+
+**1. Plugin adicional — mismo mecanismo que Dataview/Git de arriba, tu agente lo deja listo:**
+
+```
+Además de Dataview y Git, dejá pre-instalado y habilitado el plugin
+Local REST API (coddingtonbear/obsidian-local-rest-api) en esta
+carpeta, con el mismo método que los otros dos. Antes de conectar
+nada, verificá que la versión instalada sea 4.1.3 o más nueva —
+versiones anteriores tienen una falla de seguridad ya corregida
+(path traversal, GHSA-62gx-5q78-wrvx). Si el release que bajaste
+es más viejo, avisame antes de seguir.
+```
+
+**2. Después de tus 2 clicks de siempre (abrir como vault + confirmar que confiás), decile esto a tu agente:**
+
+```
+Ya abrí el vault con el plugin Local REST API activado. Este plugin
+genera automáticamente una clave de acceso la primera vez que corre
+— buscala en .obsidian/plugins/obsidian-local-rest-api/data.json y
+usala para conectarte a mí mismo por MCP (server local, puerto 27124,
+HTTPS con certificado propio del plugin — puede que tengas que decirle
+a tu configuración de MCP que confíe en ese certificado igual). Una
+vez conectado, probá una consulta simple para confirmar que funciona.
+```
+
+Tu agente sabe cómo agregar un servidor MCP por HTTP en su propia herramienta (el comando exacto cambia según si es Claude Code, Codex CLI, u otro) — no hace falta que vos sepas el comando, pedíselo y que lo resuelva.
+
+**3. La parte que realmente importa: etiquetas consistentes, no un caos de tags distintos**
+
+Que tu agente pueda *consultar* el vault por MCP no sirve de mucho si cada nota usa una etiqueta distinta para lo mismo. La convención que hace que esto funcione de verdad:
+
+- Cada nota lleva unas pocas etiquetas fijas en su encabezado (de qué tema es, en qué estado está — por ejemplo "en progreso" o "cerrado").
+- Tu agente NO inventa una etiqueta nueva cada vez que se le ocurre una — reusa las que ya existen, salvo que decidan juntos crear una categoría nueva de verdad.
+- Antes de escribir una nota nueva, tu agente consulta qué etiquetas ya existen (por MCP, o leyendo unas pocas notas de ejemplo) en vez de adivinar.
+
+Esa disciplina — pocas etiquetas, reusadas siempre igual, consultables por tu agente — es lo que convierte un montón de archivos sueltos en una base de conocimiento que de verdad se puede interrogar.
+
+### Decile esto a tu agente (para probar que la conexión + etiquetas funcionan juntas):
+
+```
+Buscá en el vault, por MCP, todas las notas que tengan la etiqueta
+"[una etiqueta real de tu segundo cerebro]". Contame cuáles encontraste.
+Después creá una nota nueva de prueba con esa misma etiqueta, insertada
+por MCP (no escribiendo el archivo directo) — y confirmame que la
+etiqueta que usaste ya existía antes, no la inventaste ahora.
+```
+
+**¿No te interesa esto todavía?** No hace falta — tu agente sigue pudiendo leer y escribir notas como hasta ahora, solo que pidiéndoselo directo en el chat en vez de por consulta estructurada. Podés volver a esto más adelante.
+
 ## Acción
 
 Elegí un tema real que te importe (no tiene que ser grande). Pedile al agente que cree la primera nota siguiendo la convención, y una segunda nota sobre algo relacionado, linkeada a la primera.

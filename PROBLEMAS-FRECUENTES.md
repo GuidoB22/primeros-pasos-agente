@@ -26,10 +26,14 @@ Se arma con lo que va apareciendo en Discord y en los issues de GitHub — cada 
 
 ---
 
-## "Instalé el plugin de Local REST API pero el MCP no conecta — el puerto HTTPS no responde"
+## "Instalé el plugin de Local REST API pero el MCP no conecta"
 
-**Síntoma**: el plugin queda instalado y activado, pero al conectar el MCP con el puerto HTTPS (27124) la conexión falla — parece que "el puerto no escucha", aunque Obsidian esté abierto y todo lo demás bien instalado.
+**Síntoma**: el plugin queda instalado y activado, pero el MCP no conecta — parece que "el puerto no escucha", aunque Obsidian esté abierto y todo lo demás bien instalado. Hay DOS causas distintas, no una sola, y suelen aparecer una después de la otra:
 
-**Causa**: ese puerto usa un certificado que el propio plugin se firma a sí mismo (no lo emite una autoridad reconocida) — la mayoría de los clientes MCP lo rechazan por eso, no porque el servidor esté caído.
+**Causa 1 — probaste el puerto HTTPS (27124)**: ese puerto usa un certificado que el propio plugin se firma a sí mismo (no lo emite una autoridad reconocida) — la mayoría de los clientes MCP lo rechazan por eso, no porque el servidor esté caído.
+→ **Solución**: usar el puerto HTTP 27123 (`http://127.0.0.1:27123/mcp/`) en vez del 27124.
 
-**Solución**: usar el puerto HTTP 27123 (`http://127.0.0.1:27123/mcp/`) en vez del HTTPS 27124 — mismo plugin, mismo dato, sin el problema del certificado. Ver Nivel 03, sección de conexión MCP.
+**Causa 2 — probaste el 27123 y tampoco respondía nada**: el plugin trae el servidor sin cifrar (HTTP) APAGADO por defecto — no es que el puerto esté mal, es que directamente no está escuchando en ningún puerto sin cifrar hasta que se activa esa opción.
+→ **Solución**: en `.obsidian/plugins/obsidian-local-rest-api/data.json` confirmar que `"enableInsecureServer"` esté en `true` (el agente puede escribirlo antes de que abras Obsidian por primera vez), o si ya abriste Obsidian antes de eso, activarlo a mano desde Obsidian → Settings → Community plugins → Local REST API → toggle del servidor sin cifrar.
+
+Ver Nivel 03, sección de conexión MCP, para el detalle completo de las dos causas.

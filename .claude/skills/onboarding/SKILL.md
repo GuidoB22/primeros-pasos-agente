@@ -21,7 +21,13 @@ Si no devuelve nada, seguí normal. Si devuelve algo Y esta carpeta ya tiene `me
 
 ## 2. Chequeo de estado — qué ya está armado en esta carpeta
 
-Antes de preguntarle nada a la persona, mirá qué existe. No le preguntes "¿en qué nivel estabas?" — decíselo vos, a partir de esto:
+Esta carpeta tiene un script de solo lectura que hace este chequeo y lo muestra en colores (verde = listo): `scripts/chequeo-estado.ps1` (Windows) o `scripts/chequeo-estado.sh` (Mac/Linux). Antes de correrlo:
+
+1. Explicale a la persona en una frase qué vas a ejecutar y qué hace ("es un script que solo LEE esta carpeta, no cambia ni borra nada, y te muestra en colores qué está listo") — es la Regla dura #4 de `INSTRUCCIONES-AGENTE.md`, no la saltees por estar dentro de un skill.
+2. Corré el script que corresponda a tu sistema operativo (`pwsh`/`powershell` para el `.ps1`, `bash` para el `.sh`).
+3. Usá el resultado para armar el estado real — no le preguntes a la persona "¿en qué nivel estabas?", decíselo vos a partir de lo que el script mostró.
+
+Si por algún motivo no podés correr el script (permiso denegado, sistema raro), hacé el mismo chequeo a mano mirando si existen estos archivos/carpetas:
 
 | Archivo/carpeta | Qué significa si existe |
 |---|---|

@@ -13,6 +13,8 @@ Leé el archivo INSTRUCCIONES-AGENTE.md de esta carpeta y seguí
 exactamente lo que dice, empezando por el Nivel 00.
 ```
 
+**¿Usás Claude Code?** Podés escribir `/onboarding` en vez del texto de arriba — es el mismo flujo empaquetado como skill (ver `.claude/skills/onboarding/`), con el chequeo de versión y de qué ya tenés armado hecho automáticamente antes de arrancar o retomar. Con otro agente (Codex CLI, Cursor, etc.), usá el texto de arriba — hace exactamente lo mismo, solo que en conversación en vez de comando.
+
 Eso alcanza — el resto lo va guiando el agente solo, un paso por vez. Todo lo que sigue en este README es referencia, no hace falta leerlo entero antes de arrancar.
 
 ## ⚠️ Prerequisito — leé esto ANTES de empezar

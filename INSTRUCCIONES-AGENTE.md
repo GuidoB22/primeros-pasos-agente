@@ -45,7 +45,7 @@ Cuando llegues al Nivel 03 (segundo cerebro), la guía te va a pedir que ofrezca
 
 Si algo falla (un comando no corre, una app no se instala, un permiso se niega), decilo tal cual — no describas un resultado como si hubiera pasado cuando no pasó. Es preferible parar y preguntar que seguir adelante sobre una base falsa.
 
-## Regla dura #7 — chequeá cada tanto si esta guía se actualizó
+## Regla dura #7 — chequeá cada tanto si esta guía se actualizó, y si la persona ya venía de antes, hacé un repaso antes de seguir
 
 Esta guía puede cambiar (se corrigen cosas, se agregan niveles). Al EMPEZAR una sesión nueva con esta carpeta (no en medio de un nivel), corré:
 
@@ -53,7 +53,16 @@ Esta guía puede cambiar (se corrigen cosas, se agregan niveles). Al EMPEZAR una
 git fetch && git log HEAD..origin/master --oneline
 ```
 
-Si eso devuelve algo (hay commits nuevos que no tenés), avisale a la persona en una frase ("hay una versión más nueva de esta guía") y preguntale si querés traerla (`git pull`) antes de seguir. Si no devuelve nada, no digas nada al respecto y seguí normal — no hace falta reportar "sigo actualizado" cada vez.
+Si no devuelve nada, no digas nada al respecto y seguí normal — no hace falta reportar "sigo actualizado" cada vez.
+
+Si devuelve algo (hay commits nuevos que no tenés) **y esta carpeta ya tiene `memoria.md` o `quien-soy.md`** (o sea, la persona ya había pasado por acá antes, no es su primera vez) — no le digas solo "hay una versión nueva" y sigas de largo. Hacé este repaso corto primero, porque puede que haya quedado trabada en algo que la actualización resuelve (ejemplo real: alguien avanzó todo el Nivel 03 sin la parte de MCP, porque esa parte todavía no existía en la guía cuando la hizo):
+
+1. **Leé `memoria.md`** y contale a la persona, en una o dos frases, en qué nivel había quedado la última vez — no le preguntes "¿en qué nivel estabas?", eso ya lo sabés vos.
+2. **Traé la actualización** (`git pull`).
+3. **Mostrale qué cambió, en formato corto tipo tabla** (mismo estilo que `FASES.md`, no el log de git tal cual ni un párrafo largo) — traducí cada commit a una frase simple: qué nivel afecta, y en una línea qué agrega. No la satures con todos los commits históricos, solo los que son nuevos desde la última vez que estuvo acá.
+4. **Preguntale explícitamente cómo quiere seguir** — dale opciones concretas, no una pregunta abierta: seguir en el nivel donde había quedado tal cual, o volver a un nivel anterior porque lo nuevo agrega algo que le sirve (marcá vos cuál, no la hagas adivinar). Esperá su respuesta antes de moverte.
+
+Si NO hay `memoria.md`/`quien-soy.md` (primera vez en esta carpeta), no hace falta nada de este repaso — seguí el flujo normal de la Regla #2.
 
 ## Regla dura #8 — seguí solo al próximo nivel, no te quedes esperando que te digan "seguí"
 

@@ -1,9 +1,9 @@
 ---
 name: onboarding
-description: "Punto de entrada de primeros-pasos-agente: chequea si hay una version nueva del repo, revisa que ya esta armado en esta carpeta, pide lo que falte, y continua desde el nivel correcto. Usalo para arrancar o retomar la guia."
+description: "Punto de entrada de Padawan Protocol: chequea si hay una version nueva del repo, revisa que ya esta armado en esta carpeta, pide lo que falte, y continua desde el nivel correcto. Usalo para arrancar o retomar la guia."
 license: MIT
 metadata:
-  author: primeros-pasos-agente
+  author: padawan-protocol
   version: "1.0"
 ---
 

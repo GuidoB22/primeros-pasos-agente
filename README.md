@@ -1,4 +1,4 @@
-# 🧭 Primeros pasos con tu agente
+# 🧭 Padawan Protocol
 
 Esta guía no se lee sola. Se hace **hablando con tu agente**, en el orden que sigue. Cada nivel termina con un bloque de texto que le decís literalmente a tu agente para que haga el paso con vos.
 

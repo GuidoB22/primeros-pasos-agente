@@ -20,7 +20,7 @@ Dos lugares posibles, con la MISMA plantilla (`PLANTILLA-REPORTE-PROBLEMA.md`):
 
 ### Opción 1 — Discord (para charlarlo con más gente que está usando esto)
 
-`[Guido: pegá acá el link de invitación al servidor de Discord cuando lo tengas creado]`
+[discord.gg/TW5dvxGKqh](https://discord.gg/TW5dvxGKqh)
 
 Postealo en el canal de dudas/soporte, con la plantilla completa. Alguien de ahí (o quien mantiene el proyecto) va a responder — y si es algo genuinamente nuevo, puede terminar en `PROBLEMAS-FRECUENTES.md` para que el siguiente no se trabe con lo mismo.
 

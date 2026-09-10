@@ -1,4 +1,4 @@
-# Nivel 03 — Segundo cerebro
+# 🧭 Nivel 03 — Segundo cerebro
 
 ## Memoria vs. base de conocimiento — no es lo mismo
 
@@ -52,14 +52,15 @@ Solo esto es manual (nadie puede scriptearlo por vos, ni siquiera Obsidian mismo
 
 Esos links son la documentación OFICIAL de Obsidian — son de texto, sin capturas de pantalla (así es como Obsidian la mantiene). Si en algún paso no entendés qué estás viendo en tu pantalla, describíselo a tu agente y que te ayude a identificarlo — no hace falta que la imagen esté en un documento para que tu agente te pueda orientar.
 
-### Decile esto a tu agente (después de tus 2 clicks):
-
-```
-Ya abrí la carpeta como vault y confirmé que confío en los
-plugins. Confirmá que ves la carpeta .obsidian/plugins/ con
-dataview y obsidian-git adentro, y contame en una línea para
-qué sirve cada uno con tus propias palabras.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente (después de tus 2 clicks):**
+>
+> ```
+> Ya abrí la carpeta como vault y confirmé que confío en los
+> plugins. Confirmá que ves la carpeta .obsidian/plugins/ con
+> dataview y obsidian-git adentro, y contame en una línea para
+> qué sirve cada uno con tus propias palabras.
+> ```
 
 **¿Preferís no instalar nada por ahora?** Está perfecto — seguí con los archivos de texto plano de arriba, funcionan igual. Podés volver a esto cuando quieras.
 
@@ -109,6 +110,18 @@ consulta simple para confirmar que funciona.
 
 Tu agente sabe cómo agregar un servidor MCP por HTTP en su propia herramienta (el comando exacto cambia según si es Claude Code, Codex CLI, u otro) — no hace falta que vos sepas el comando, pedíselo y que lo resuelva.
 
+> [!TIP]
+> 🧭 **Decile esto a tu agente (prueba rápida, apenas conectes):**
+>
+> ```
+> Escribí, por MCP (no escribiendo el archivo directo), una nota
+> de prueba llamada conexion-mcp-ok.md con el texto "Conexión MCP
+> verificada: [fecha de hoy]". Después leela también por MCP.
+> Confirmame que el contenido que leíste coincide exactamente.
+> ```
+>
+> Esto prueba la conexión en sí, sin depender de que ya tengas notas o etiquetas armadas — la prueba más completa (con etiquetas reales) viene un poco más abajo.
+
 **¿Ya intentaste esto y no conectó?** Hay dos causas posibles, no una sola:
 
 1. **Probaste el puerto 27124 (HTTPS)** — falla por el certificado autofirmado, como se explica arriba. Solución: usar 27123.
@@ -124,15 +137,16 @@ Que tu agente pueda *consultar* el vault por MCP no sirve de mucho si cada nota 
 
 Esa disciplina — pocas etiquetas, reusadas siempre igual, consultables por tu agente — es lo que convierte un montón de archivos sueltos en una base de conocimiento que de verdad se puede interrogar.
 
-### Decile esto a tu agente (para probar que la conexión + etiquetas funcionan juntas):
-
-```
-Buscá en el vault, por MCP, todas las notas que tengan la etiqueta
-"[una etiqueta real de tu segundo cerebro]". Contame cuáles encontraste.
-Después creá una nota nueva de prueba con esa misma etiqueta, insertada
-por MCP (no escribiendo el archivo directo) — y confirmame que la
-etiqueta que usaste ya existía antes, no la inventaste ahora.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente (para probar que la conexión + etiquetas funcionan juntas):**
+>
+> ```
+> Buscá en el vault, por MCP, todas las notas que tengan la etiqueta
+> "[una etiqueta real de tu segundo cerebro]". Contame cuáles encontraste.
+> Después creá una nota nueva de prueba con esa misma etiqueta, insertada
+> por MCP (no escribiendo el archivo directo) — y confirmame que la
+> etiqueta que usaste ya existía antes, no la inventaste ahora.
+> ```
 
 **¿No te interesa esto todavía?** No hace falta — tu agente sigue pudiendo leer y escribir notas como hasta ahora, solo que pidiéndoselo directo en el chat en vez de por consulta estructurada. Podés volver a esto más adelante.
 
@@ -146,13 +160,14 @@ Días después (o ahora mismo, simulando), preguntale al agente algo sobre ese t
 
 ---
 
-### Decile esto a tu agente:
-
-```
-Quiero armar mi segundo cerebro. Elegí el tema "[tu tema real acá]".
-Creá una carpeta segundo-cerebro/ si no existe, y adentro una nota
-sobre ese tema siguiendo la convención de plantillas/segundo-cerebro/.
-Después creá una segunda nota sobre [un tema relacionado], linkeada
-a la primera. Cuando termines, preguntame qué sé sobre el tema
-buscando en esas notas, para confirmar que funciona.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente:**
+>
+> ```
+> Quiero armar mi segundo cerebro. Elegí el tema "[tu tema real acá]".
+> Creá una carpeta segundo-cerebro/ si no existe, y adentro una nota
+> sobre ese tema siguiendo la convención de plantillas/segundo-cerebro/.
+> Después creá una segunda nota sobre [un tema relacionado], linkeada
+> a la primera. Cuando termines, preguntame qué sé sobre el tema
+> buscando en esas notas, para confirmar que funciona.
+> ```

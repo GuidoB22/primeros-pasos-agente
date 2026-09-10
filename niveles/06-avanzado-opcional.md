@@ -1,4 +1,4 @@
-# Nivel 06 — Avanzado (opcional)
+# 🧭 Nivel 06 — Avanzado (opcional)
 
 Este nivel es lectura, no tiene checkpoint obligatorio. Volvé acá cuando lo de antes ya te quede chico.
 
@@ -51,13 +51,14 @@ Si el recurso es un repo de git, el marcador más simple es el **SHA del último
 5. Actualizar el marcador al SHA nuevo, haya habido novedades o no.
 6. Ofrecerte lo que encontró — nunca incorporarlo solo, sin que decidas vos.
 
-### Decile esto a tu agente (si tenés un recurso externo que consultás seguido):
-
-```
-Quiero que antes de releer [el recurso que sea] completo, guardes
-un marcador de la última versión que viste (si es un repo git, usá
-el SHA del último commit). La próxima vez, comparalo contra el
-estado actual: si no cambió nada, no releas nada y decímelo en una
-línea. Si cambió, traeme solo lo nuevo, no todo de nuevo — y
-actualizá el marcador después.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente (si tenés un recurso externo que consultás seguido):**
+>
+> ```
+> Quiero que antes de releer [el recurso que sea] completo, guardes
+> un marcador de la última versión que viste (si es un repo git, usá
+> el SHA del último commit). La próxima vez, comparalo contra el
+> estado actual: si no cambió nada, no releas nada y decímelo en una
+> línea. Si cambió, traeme solo lo nuevo, no todo de nuevo — y
+> actualizá el marcador después.
+> ```

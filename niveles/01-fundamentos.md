@@ -1,4 +1,4 @@
-# Nivel 01 — Fundamentos
+# 🧭 Nivel 01 — Fundamentos
 
 > ⚠️ ¿Llegaste directo a este archivo, sin pasar por `INSTRUCCIONES-AGENTE.md` (raíz del repo) ni por el Nivel 00? Primero confirmá que estás usando un **agente de código** (Claude Code, Codex CLI, etc.) y no un chat común (ChatGPT/Claude/Gemini en el navegador) — esos no pueden hacer lo que sigue. Y si todavía no le contaste a tu agente quién sos y para qué querés esto, volvé a [Nivel 00 — Contexto](00-contexto.md), va primero.
 
@@ -38,11 +38,12 @@ El agente crea el archivo, te dice la ruta completa de la carpeta (para que la a
 
 ---
 
-### Decile esto a tu agente:
-
-```
-Creá un archivo llamado hola.md en esta carpeta, con el texto
-"Primer contacto: [fecha de hoy]". Después leelo y decime qué
-dice. Y decime también la ruta completa de esta carpeta, para
-poder anotarla.
-```
+> [!TIP]
+> 🧭 **Decile esto a tu agente:**
+>
+> ```
+> Creá un archivo llamado hola.md en esta carpeta, con el texto
+> "Primer contacto: [fecha de hoy]". Después leelo y decime qué
+> dice. Y decime también la ruta completa de esta carpeta, para
+> poder anotarla.
+> ```

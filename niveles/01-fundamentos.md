@@ -4,7 +4,7 @@
 
 ## Qué es esto
 
-Un agente de código no es solo un chat: además de responderte, puede **leer y escribir archivos reales en tu computadora**, dentro de la carpeta donde lo abriste. Todo lo que vas a construir en los próximos niveles — memoria, base de conocimiento, tu forma de trabajar — no es "configuración mágica": son archivos de texto simples que vos y tu agente leen y escriben juntos.
+Un agente de código es distinto de un chat común: además de contestarte, puede **leer y escribir archivos de verdad en tu computadora** — dentro de la carpeta donde lo abriste, nada más. Todo lo que vas a construir en los próximos niveles (memoria, base de conocimiento, tu forma de trabajar) no es ninguna configuración escondida ni magia: son archivos de texto simples, que podés abrir y leer vos mismo/a cuando quieras, y que vos y tu agente van completando juntos.
 
 ```mermaid
 flowchart LR
@@ -14,7 +14,7 @@ flowchart LR
     D --> A
 ```
 
-Ese ciclo — vos pedís, el agente toca archivos reales, vos ves el resultado — es la base de TODO lo que sigue.
+Este círculo se repite todo el tiempo: vos pedís algo, el agente toca un archivo real, y vos ves el resultado en la pantalla. Todo lo que sigue en esta guía es, en el fondo, una variación de este mismo círculo.
 
 ## ⚠️ No perder tu carpeta — esto es más importante de lo que parece
 
@@ -30,13 +30,22 @@ Si en algún momento no estás seguro de si estás en la carpeta correcta: busc�
 
 ## Antes de seguir
 
-Confirmá que tu agente puede efectivamente leer y escribir en esta carpeta. Es un chequeo de 30 segundos, pero si falla acá, nada de lo que sigue va a funcionar.
+Confirmá que tu agente puede de verdad leer y escribir en esta carpeta. Es un chequeo de 30 segundos, pero si falla acá, nada de lo que sigue va a funcionar.
 
-De paso, aprovechamos el mismo momento para juntar dos datos más que vamos a necesitar más adelante (no hace falta que entiendas para qué todavía) — así no hay que volver a preguntarlos, ni descubrir a mitad de camino que algo falta: en qué sistema operativo estás, y si tu agente puede ejecutar un comando de terminal además de tocar archivos (son dos capacidades distintas — algunos agentes solo hacen una de las dos).
+Aprovechamos el mismo momento para anotar dos datos más que vamos a necesitar más adelante — así no hay que volver a preguntarlos después:
+
+- **En qué sistema operativo estás** (Windows, Mac o Linux — el tipo de computadora que usás).
+- **Si tu agente puede ejecutar un comando de terminal.** La terminal es una ventanita de texto donde le das órdenes a la computadora escribiéndolas, en vez de hacer clicks. No todos los agentes pueden usarla: algunos solo tocan archivos, otros también saben escribir en la terminal. Ninguna de las dos es mejor — solo necesitamos saber cuál es la tuya, porque más adelante va a importar.
 
 ## Checkpoint
 
-El agente crea el archivo, te dice la ruta completa de la carpeta (para que la anotes), te confirma tu sistema operativo, corre un comando de solo lectura sin problemas (o te avisa con claridad si no puede), y cuando le pedís que te diga qué dice el archivo, te repite el contenido correcto (no inventado).
+Estas cinco cosas tienen que pasar, en este orden:
+
+1. El agente crea el archivo.
+2. Te dice la ruta completa de la carpeta, para que la anotes.
+3. Te confirma tu sistema operativo.
+4. Corre un comando de solo lectura sin problemas (o te avisa con claridad si no puede hacerlo — no es grave, es solo información).
+5. Cuando le pedís que te diga qué dice el archivo, te repite el contenido correcto — el que él mismo escribió, no algo inventado.
 
 ---
 

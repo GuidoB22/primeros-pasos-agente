@@ -2,11 +2,11 @@
 
 ## El problema
 
-Por defecto, un agente **no se acuerda de nada** apenas cerrás la sesión. La próxima vez que lo abrís, es como si nunca hubieras hablado — le tenés que volver a explicar todo. Eso está bien para preguntas sueltas, pero es un problema en cuanto empezás a trabajar en algo que dura más de una sesión.
+Por defecto, un agente **no se acuerda de nada** apenas cerrás la sesión (una "sesión" es, básicamente, una conversación: desde que abrís el chat con tu agente hasta que lo cerrás). La próxima vez que lo abrís, es como si nunca hubieras hablado con él — le tenés que volver a explicar todo de cero. Para una pregunta suelta eso no molesta, pero es un problema en cuanto empezás a trabajar en algo que dura más de una charla.
 
-## La solución sin depender de nada externo
+## La solución, sin instalar nada
 
-Un archivo (`memoria.md`) que el agente lee al EMPEZAR cada sesión, y actualiza al TERMINAR. No hace falta ninguna herramienta especial — es una convención que vos le das por escrito una sola vez, y el agente la sigue de ahí en adelante.
+Un archivo llamado `memoria.md` que el agente lee al EMPEZAR cada sesión, y actualiza al TERMINAR. No hace falta ninguna herramienta especial ni instalar nada: es una regla simple que le das a tu agente una sola vez, por escrito, y de ahí en adelante la sigue solo, sin que se la tengas que repetir.
 
 ```mermaid
 flowchart TB
@@ -19,11 +19,11 @@ flowchart TB
     A2 -.archivo persiste.-> B1
 ```
 
-Más adelante (Nivel 06) vas a poder reemplazar este archivo simple por un sistema de memoria más completo (búsqueda, categorías, memoria compartida entre proyectos) — pero esa mejora no cambia el concepto de fondo, solo lo hace más cómodo a gran escala. Empezá con el archivo simple.
+Más adelante vas a poder cambiar este archivo simple por un sistema de memoria más completo, que busca y organiza por vos en vez de que lo hagas a mano. Pero eso es solo una mejora de comodidad — la idea de fondo no cambia: el agente lee al empezar, escribe al cerrar. Por ahora, empezá con el archivo simple, que alcanza y sobra.
 
 ## Acción
 
-Mirá `plantillas/memoria/memoria.md` — es el punto de partida. Copiala a la raíz de tu propio proyecto (no tiene por qué quedarse en esta carpeta de la guía) y decile a tu agente la regla de abajo.
+Mirá `plantillas/memoria/memoria.md` — es el punto de partida, una plantilla vacía lista para usar. Copiala a la carpeta principal de tu propio proyecto (no tiene por qué quedarse acá, en la carpeta de esta guía) y decile a tu agente la regla de abajo.
 
 ## Checkpoint
 
